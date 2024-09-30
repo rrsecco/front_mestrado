@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(13, 95px); 
+    grid-template-rows: repeat(7, 95px);   
+    gap: 0px;
+}
+
+/* Grid Item */
+.grid-item {
+    width: 95px;
+    height: 95px;
+    border: 1px solid black;
+    user-select: none;
+    background-color: #FF5733;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.grid-item span{
+    height: 19px;
+    border: 1px solid black;
+}
+
+.grid-item .number {
+    background-color: #f4f4f4;
+    padding-left: 5px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.grid-item .info, .info-curiosity, .info-card {
+    cursor: pointer;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 22px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.grid-item .info:active, .info-curiosity:active, .info-card:active{
+    transform: scale(0.9);
+}
+
+/* Estilos para os itens específicos */
+.item1 { grid-column: 5; grid-row: 1; background-image: url(../imgs/background/d1.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item2 { grid-column: 4; grid-row: 1; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item3 { grid-column: 3; grid-row: 1; background-image: url(../imgs/background/d2.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item4 { grid-column: 2; grid-row: 1; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item5 { grid-column: 1; grid-row: 1; background-image: url(../imgs/background/d3.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.item6 { grid-column: 1; grid-row: 2; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item7 { grid-column: 1; grid-row: 3; background-image: url(../imgs/background/d4.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item8 { grid-column: 2; grid-row: 3; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item9 { grid-column: 3; grid-row: 3; background-image: url(../imgs/background/d5.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item10 { grid-column: 4; grid-row: 3; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.item11 { grid-column: 4; grid-row: 4; background-image: url(../imgs/background/d6.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item12 { grid-column: 4; grid-row: 5; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item13 { grid-column: 3; grid-row: 5; background-image: url(../imgs/background/d7.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item14 { grid-column: 2; grid-row: 5; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item15 { grid-column: 1; grid-row: 5; background-image: url(../imgs/background/d8.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.item16 { grid-column: 1; grid-row: 6; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item17 { grid-column: 1; grid-row: 7; background-image: url(../imgs/background/d9.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item18 { grid-column: 2; grid-row: 7; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item19 { grid-column: 3; grid-row: 7; background-image: url(../imgs/background/d10.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item20 { grid-column: 4; grid-row: 7; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.item21 { grid-column: 5; grid-row: 7; background-image: url(../imgs/background/d11.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item22 { grid-column: 6; grid-row: 7; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item23 { grid-column: 7; grid-row: 7; background-image: url(../imgs/background/cards.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item24 { grid-column: 8; grid-row: 7; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item25 { grid-column: 9; grid-row: 7; background-image: url(../imgs/background/d12.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item26 { grid-column: 10; grid-row: 7; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item27 { grid-column: 11; grid-row: 7; background-image: url(../imgs/background/d13.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item28 { grid-column: 12; grid-row: 7; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item29 { grid-column: 13; grid-row: 7; background-image: url(../imgs/background/d14.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.item30 { grid-column: 13; grid-row: 6; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item31 { grid-column: 13; grid-row: 5; background-image: url(../imgs/background/d15.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item32 { grid-column: 12; grid-row: 5; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item33 { grid-column: 11; grid-row: 5; background-image: url(../imgs/background/d16.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item34 { grid-column: 10; grid-row: 5; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item35 { grid-column: 10; grid-row: 4; background-image: url(../imgs/background/d17.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item36 { grid-column: 10; grid-row: 3; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.item37 { grid-column: 11; grid-row: 3; background-image: url(../imgs/background/d18.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item38 { grid-column: 12; grid-row: 3; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item39 { grid-column: 13; grid-row: 3; background-image: url(../imgs/background/d19.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item40 { grid-column: 13; grid-row: 2; background-image: url(../imgs/background/danger.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item41 { grid-column: 13; grid-row: 1; background-image: url(../imgs/background/d20.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item42 { grid-column: 12; grid-row: 1; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item43 { grid-column: 11; grid-row: 1; background-image: url(../imgs/background/d21.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item44 { grid-column: 10; grid-row: 1; background-image: url(../imgs/background/curiosity.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.item45 { grid-column: 9; grid-row: 1; background-image: url(../imgs/background/d22.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.hand{
+    background-image: url('../imgs/Button-Hand.png');
+    grid-column: 12;
+    grid-row: 6;
+    width: 60px;
+    height: 60px;
+    margin-top: 18%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: pointer; /* Mostra que a mão é clicável */
+}
+
+.given {
+    width: 50px;
+    height: 50px;
+    margin-top: 11%;    
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer; /* Mostra que a mão é clicável */
+}
+.gone {
+    grid-column: 10 / span 2; /* Ocupa as colunas 10 e 11 */
+    grid-row: 6;
+    background-image: url('../imgs/dados/dado_um.png');
+    background-size: cover; /* Faz com que a imagem cubra o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: #f4f4f4;
+    margin-left: 19%;
+}
+
+.gtwo {
+    grid-column: 11 / span 2; /* Ocupa as colunas 10 e 11 */
+    grid-row: 6;
+    background-color: #f4f4f4;
+    background-image: url('../imgs/dados/dado_dois.png');
+    background-size: cover; /* Faz com que a imagem cubra o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    margin-left: 5%;
+}
+
+.special-curiosity{
+    background-color: aqua;
+}
+
+.special_card{
+    background-color: blueviolet;
+}
+
+.special {
+    background-color: yellow;
+}
+
+
+/* Estilo específico para tokens */
+.token {
+    position: absolute; /* Permite posicionamento absoluto dentro do contêiner */
+    width: 50px;
+    height: 90px;
+    text-align: center;
+    line-height: 80px; /* Ajustado para centralizar o texto verticalmente */
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer; /* Mostra que o token é clicável */
+    margin: 0 5px; /* Espaçamento entre os tokens */
+    transform: translate(0, 0); /* Define uma posição inicial padrão */
+}
+
+.t-yellow {
+    background-image: url('../imgs/tokens/Token-Yellow.png');
+}
+
+.t-blue {
+    background-image: url('../imgs/tokens/Token-Blue.png');
+}
+
+.t-green {
+    background-image: url('../imgs/tokens/Token-Green.png');
+}
+
+.t-orange {
+    background-image: url('../imgs/tokens/Token-Orange.png');
+}
+
+.t-pink {
+    background-image: url('../imgs/tokens/Token-Pink.png');
+}
+
+.t-purple {
+    background-image: url('../imgs/tokens/Token-Purple.png');
+}
+
+.t-blue_ {
+    background-image: url('../imgs/tokens/Token-Blue_.png');
+}
+
+.t-red {
+    background-image: url('../imgs/tokens/Token-Red.png');
+}
+
+.flag_start{
+    grid-column: 6; /* Ocupa as colunas 10 e 11 */
+    grid-row: 1;
+    background-image: url('../imgs/flags/Flag-Green.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flag_finish{
+    grid-column: 8; /* Ocupa as colunas 10 e 11 */
+    grid-row: 1;
+    background-image: url('../imgs/flags/Flag-Checker.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paper{
+    grid-column: 3; /* Ocupa as colunas 10 e 11 */
+    grid-row: 6;
+    background-image: url('../imgs/Icon-Instructions.png');
+    background-position: center;
+    margin-top: 7px;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+.paper:active {
+    transform: scale(0.9);
+}
+
+.backtext{
+    display: flex;
+    margin-left: 282px;
+    user-select: none;
+    background-image: url('../imgs/background/back_principal.png');
+    height: 200px;
+    width: 300px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deck {
+    width: 400px;
+    display: flex;
+    justify-content: center; /* Centraliza as cartas horizontalmente */
+    gap: 10px; /* Espaçamento entre as cartas, ajuste conforme necessário */
+    margin-top: 330px;
+    margin-left: 322px;
+    cursor: pointer; /* Mostra que o token é clicável */
+}
+
+.card {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    width: 190px;
+    height: 100px; 
+    background-color: #FF5733; 
+    border: 1px solid black; 
+    user-select: none;
+}
+
+.card img {
+    height: 60px;
+    width: 60px;
+}
+
+.card-luck-or-bad-luck{
+    background-color: 
+    #2c7b24;
+}
+
+.card-quiz{
+    background-color: 
+    #0000ff;
+}
+
+.card:active {
+    transform: scale(0.9);
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido com mais opacidade */
+}
+
+.modal-content button{
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.modal-content button:hover{
+    text-decoration: line-through;
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    border: 1px solid #ddd;
+    width: 90%; /* Ajusta a largura do modal */
+    max-width: 500px; /* Largura máxima para telas menores */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    font-family: 'Arial', sans-serif; /* Fonte moderna e legível */
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    color: #666;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Estilo para o título do modal */
+.modal-content h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilo para a descrição do modal */
+.modal-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Estilo para a imagem do modal */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Arredondar os cantos da imagem */
+}
+
+/* Estilo para a mão e tokens */
+.hand, .token {
+    cursor: pointer; /* Mostra que o token é clicável */
+}
+
+/* Consultas de mídia para telas menores */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(13, 50px); /* Diminui o tamanho das colunas */
+        grid-template-rows: repeat(7, 50px);     /* Diminui o tamanho das linhas */
+    }
+
+    .grid-item {
+        width: 50px;
+        height: 50px;
+        padding: 2px; /* Ajusta o padding */
+    }
+
+    .grid-item span {
+        height: 10px;
+    }
+
+    .grid-item .number, .grid-item .info, .info-curiosity, .info-card {
+        font-size: 12px; /* Diminui o tamanho da fonte */
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-bottom: 10px;
+    }
+
+    .token {
+        width: 20px; /* Diminui a largura dos tokens */
+        height: 40px; /* Diminui a altura dos tokens */
+        line-height: 30px; /* Ajusta a linha para centralizar o texto */
+    }
+
+    .hand {
+        width: 40px;
+        height: 40px;
+    }
+
+    .given {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .gone, .gtwo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .deck {
+        width: 300px;
+        margin-top: 200px;
+        margin-left: 50px;
+    }
+
+    .card {
+        width: 100px;
+        height: 50px;
+    }
+
+    .card img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .modal-content {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
