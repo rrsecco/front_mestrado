@@ -1,0 +1,73 @@
+#accessibility-menu {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+    margin-bottom: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button i {
+    font-size: 24px;
+}
+
+.menu-button:hover {
+    background-color: #1c86ee;
+    transform: scale(1.1);
+}
+
+.menu-button:active {
+    transform: scale(0.95);
+}
+
+body.high-contrast {
+    background-color: #000;
+    color: #000;
+}
+
+body.high-contrast a {
+    color: #0ff;
+}
+
+body.high-contrast button {
+    background-color: #fff;
+    color: #000;
+}
+
+.high-contrast{
+    filter: contrast(2);
+}
+
+.large-pointer {
+    cursor: none; /* Esconde o cursor padrão */
+}
+
+#saturate-more {
+}
+
+#saturate-more.active {
+    background-color: #bbb; /* Cor mais escura quando ativo */
+}
