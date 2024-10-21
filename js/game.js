@@ -24,7 +24,7 @@ window.onload = () => {
         timeStart--
 
         if(timeStart == 25){
-            window.open('https://google.com.br', 'popup')
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLScmqbmJey1dFLF22fyJBUIV3KuEwkPJnj0YhyE8f5rg7eeXxQ/viewform?usp=sharing', 'popup')
         }
 
         if(timeStart <= 0){
